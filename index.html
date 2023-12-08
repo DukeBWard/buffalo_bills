@@ -4,58 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buffalo Bills Fan Site</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0; /* Light gray background */
-        }
-
-        header {
-            background-color: #00338d; /* Buffalo Bills blue */
-            color: white;
-            padding: 15px;
-            text-align: center;
-        }
-
-        nav {
-            background-color: #005eb8; /* Darker blue for the navigation bar */
-            overflow: hidden;
-        }
-
-        nav a {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        nav a:hover {
-            background-color: #00338d; /* Darker blue on hover */
-        }
-
-        section {
-            padding: 20px;
-        }
-
-        footer {
-            background-color: #00338d;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1>Welcome to Buffalo Bills Fan Site</h1>
+        <img src="bills.png" width="125px" height="100px">
+        <h1> 
+            Welcome to the Buffalo Bills Fan Site
+        </h1>
     </header>
 
     <nav>
@@ -69,6 +26,55 @@
         <h2>About the Buffalo Bills</h2>
         <p>The Buffalo Bills are a professional American football team based in Buffalo, New York. They compete in the National Football League (NFL) as a member club of the league's American Football Conference (AFC) East division.</p>
     </section>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture Collage</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .collage {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+            gap: 10px; /* Adjust the gap between images */
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        .collage img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .collage img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="collage">
+        <img src="pic1.jpg" alt="Image 1">
+        <img src="pic2.jpg" alt="Image 2">
+        <img src="pic3.jpg" alt="Image 3">
+        <!-- Add more images as needed -->
+    </div>
+
+</body>
+</html>
+
 
     <footer>
         &copy; 2023 Buffalo Bills Fan Site
