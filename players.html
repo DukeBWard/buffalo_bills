@@ -30,15 +30,17 @@
         }
 
         table {
-            width: 100%;
+            width: 75%;
             border-collapse: collapse;
-            margin-top: 20px;
+            margin-left: 15%;
+            margin-right: 15%;
+            
         }
 
         th, td {
             border: 1px solid #dddddd;
             text-align: left;
-            padding: 8px;
+            padding: 0.50%;
         }
 
         th {
@@ -47,6 +49,16 @@
 
         h2 {
             color: #003366;
+        }
+
+        .collage {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+            gap: 10px; /* Adjust the gap between images */
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            justify-content: center;
         }
     </style>
 </head>
